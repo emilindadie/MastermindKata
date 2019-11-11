@@ -23,7 +23,9 @@ const Mastermind = {
     },
 
     evaluate : function(secretCombinaison, combinaisonColor){
-        return [];
+        const wellPlaced = this.shouldFindNumberOfWellPlacedColors(secretCombinaison, combinaisonColor);
+        const misPlaced = this.shouldFindNumberOfMisPlacedColors(secretCombinaison, combinaisonColor)
+        return [wellPlaced, misPlaced];
     }
 }
 
