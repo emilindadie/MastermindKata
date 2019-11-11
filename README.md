@@ -1,0 +1,2 @@
+# MastermindKata
+Kata MastermindKata
