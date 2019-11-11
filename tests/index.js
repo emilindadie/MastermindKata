@@ -33,4 +33,19 @@ describe('Masterminf Test', () => {
         // Assert
         expect(output).toEqual(2);
     });
+
+
+    it('should evaluate combinaison', () => {
+           
+        //Arrange
+        const mastermind = Object.create(Mastermind);
+        const secret = ['red', 'yellow'];
+        const porposition = ['blue', 'red'];
+
+        // Act 
+        const output = mastermind.evaluate(secret, porposition);
+
+        // Assert
+        expect(output).toEqual([0, 1]);
+    });
   });

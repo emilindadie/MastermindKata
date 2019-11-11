@@ -20,6 +20,10 @@ const Mastermind = {
             });
         });
         return numberMisPlaced;
+    },
+
+    evaluate : function(secretCombinaison, combinaisonColor){
+        return [];
     }
 }
 
