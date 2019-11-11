@@ -1,6 +1,13 @@
 const Mastermind = {
     shouldFindNumberOfWellPlacedColors : function(secretCombinaison, combinaisonColor){
-        return "";
+        const size = secretCombinaison.length;
+        let numberGoodPlaced = 0;
+        for(i = 0 ; i < size; i++){
+            if(secretCombinaison[i] == combinaisonColor[i]){
+                numberGoodPlaced += 1;
+            }
+        }
+        return numberGoodPlaced;
     }
 }
 
