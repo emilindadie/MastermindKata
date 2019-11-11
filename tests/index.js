@@ -10,10 +10,10 @@ describe('Masterminf Test', () => {
         //Arrange
         const mastermind = Object.create(Mastermind);
         const secret = ['red', 'blue'];
-        const porposition = ['red', 'blue'];
+        const proposition = ['red', 'blue'];
 
         // Act 
-        const output = mastermind.shouldFindNumberOfWellPlacedColors(secret, porposition);
+        const output = mastermind.shouldFindNumberOfWellPlacedColors(secret, proposition);
 
         // Assert
         expect(output).toEqual(2);
@@ -25,10 +25,10 @@ describe('Masterminf Test', () => {
         //Arrange
         const mastermind = Object.create(Mastermind);
         const secret = ['red', 'blue', 'pink'];
-        const porposition = ['blue', 'red', 'green'];
+        const proposition = ['blue', 'red', 'green'];
 
         // Act 
-        const output = mastermind.shouldFindNumberOfMisPlacedColors(secret, porposition);
+        const output = mastermind.shouldFindNumberOfMisPlacedColors(secret, proposition);
 
         // Assert
         expect(output).toEqual(2);
@@ -36,14 +36,13 @@ describe('Masterminf Test', () => {
 
 
     it('should evaluate combinaison', () => {
-           
         //Arrange
         const mastermind = Object.create(Mastermind);
         const secret = ['red', 'yellow'];
-        const porposition = ['blue', 'red'];
+        const proposition = ['blue', 'red'];
 
         // Act 
-        const output = mastermind.evaluate(secret, porposition);
+        const output = mastermind.evaluate(secret, proposition);
 
         // Assert
         expect(output).toEqual([0, 1]);

@@ -40,3 +40,9 @@ Take care to start simple and choose wisely the following tests in order to have
 # Comments from those who are working on this Kata
 
 Here is a tutorial (in french) demonstrating a possible progression to solve this Kata.
+
+
+# Run tests
+```sh
+$ npm run test  
+```
