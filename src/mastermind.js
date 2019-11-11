@@ -11,7 +11,15 @@ const Mastermind = {
     },
 
     shouldFindNumberOfMisPlacedColors : function(secretCombinaison, combinaisonColor){
-        return "";
+        let numberMisPlaced = 0;
+        secretCombinaison.forEach((color, index) => {
+            combinaisonColor.forEach((color2, index2) => {
+                if(color2 == color && index2 != index){
+                    numberMisPlaced += 1;
+                }
+            });
+        });
+        return numberMisPlaced;
     }
 }
 
