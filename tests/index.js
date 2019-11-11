@@ -18,4 +18,19 @@ describe('Masterminf Test', () => {
         // Assert
         expect(output).toEqual(2);
     });
+
+
+    it('should find number of misplaced colors', () => {
+           
+        //Arrange
+        const mastermind = Object.create(Mastermind);
+        const secret = ['red', 'blue', 'pink'];
+        const porposition = ['blue', 'red', 'green'];
+
+        // Act 
+        const output = mastermind.shouldFindNumberOfMisPlacedColors(secret, porposition);
+
+        // Assert
+        expect(output).toEqual(2);
+    });
   });

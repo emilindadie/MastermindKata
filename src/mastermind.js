@@ -8,6 +8,10 @@ const Mastermind = {
             }
         }
         return numberGoodPlaced;
+    },
+
+    shouldFindNumberOfMisPlacedColors : function(secretCombinaison, combinaisonColor){
+        return "";
     }
 }
 
