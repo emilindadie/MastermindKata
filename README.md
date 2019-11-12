@@ -1,6 +1,4 @@
 # MastermindKata
-Kata MastermindKata
-# MastermindKata
 
 **Mastermind**
 
